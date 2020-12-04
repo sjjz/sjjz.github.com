@@ -13,7 +13,7 @@ minima:
     github: sjjz
 
 header_pages:
-  - gallery.html
+  - gallery/index.html
   - about.md
 
 # Build settings

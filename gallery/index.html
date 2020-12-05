@@ -3,3 +3,15 @@ layout: default
 title: Photo Gallery
 permalink: /gallery/
 ---
+
+{% assign gallery_pages = site.pages | where: "layout", "gallery_post" %}
+
+{% for gp in gallery_pages %}
+<div class="gallery-square">
+    <div class="gallery-content">
+        <a href="{{ gp.url | relative_url }}">
+            <img class="rs" src={{ gp.thumbnail }} />
+        </a>
+    </div>
+</div>
+{% endfor %}

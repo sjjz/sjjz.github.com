@@ -1,0 +1,23 @@
+
+.gallery-square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    overflow:hidden;
+}
+
+.gallery-content {
+    position:absolute;
+    height:80%; /* = 100% - 2*10% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 10% 5%;
+
+    .rs {
+        width:auto;
+        height:auto;
+        max-height:90%;
+        max-width:100%;
+    }
+}

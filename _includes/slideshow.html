@@ -1,8 +1,12 @@
+{% assign folder_path = include.folder | prepend: "assets/images/gallery/" %}
+
 <div class="splide">
 	<div class="splide__track">
 		<ul class="splide__list">
-            {% for slide in include.slides %}
-                <li class="splide__slide"><img src="{{ slide.image_url }}" /></li>
+			{% for file in site.static_files %}
+				{% if file.path contains folder_path %}
+					<li class="splide__slide"><img src="{{ file.path }}" /></li>
+				{% endif %}
             {% endfor %}
 		</ul>
 	</div>

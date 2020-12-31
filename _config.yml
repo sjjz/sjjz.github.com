@@ -18,9 +18,13 @@ header_pages:
 
 defaults:
   - scope:
-      path: "gallery"
+      path: "_gallery_posts"
     values:
       is_gallery_post: true
+
+collections:
+  gallery_posts:
+    output: true
 
 # Build settings
 remote_theme: jekyll/minima

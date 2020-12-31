@@ -13,11 +13,18 @@ minima:
     github: sjjz
 
 header_pages:
-  - gallery/index.html
+  - gallery.html
   - about.md
+
+defaults:
+  - scope:
+      path: "gallery"
+    values:
+      is_gallery_post: true
 
 # Build settings
 remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+

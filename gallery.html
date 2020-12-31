@@ -1,0 +1,20 @@
+---
+layout: default
+title: Photo Gallery
+permalink: /gallery/
+---
+
+{% assign gallery_pages = site.pages | where: "is_gallery_post", true %}
+
+<ul class="gallery-list">
+{% for gp in gallery_pages %}
+    <li>
+        <a href="{{ gp.url | relative_url }}">
+        <div class="image-container" >
+            <img class="image" src={{ gp.thumbnail }} />
+            <div class="caption">{{ gp.title }}</div>
+        </div>
+        </a>
+    </li>
+{% endfor %}
+</ul>

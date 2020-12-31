@@ -1,0 +1,9 @@
+<div class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+            {% for slide in include.slides %}
+                <li class="splide__slide"><img src="{{ slide.image_url }}" /></li>
+            {% endfor %}
+		</ul>
+	</div>
+</div>

@@ -1,3 +1,4 @@
+{% if page.is_gallery_post %}
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 <script>
@@ -5,3 +6,4 @@
 		new Splide('.splide').mount();
 	});
 </script>
+{% endif %}

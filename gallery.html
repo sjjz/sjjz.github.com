@@ -1,5 +1,18 @@
 ---
-layout: page
+layout: default
 title: Photo Gallery
 permalink: /gallery/
 ---
+
+<ul class="gallery-list">
+{% for gp in site.gallery_posts %}
+    <li>
+        <a href="{{ gp.url | relative_url }}">
+        <div class="image-container" >
+            <img class="image" src={{ gp.thumbnail }} />
+            <div class="caption">{{ gp.title }}</div>
+        </div>
+        </a>
+    </li>
+{% endfor %}
+</ul>

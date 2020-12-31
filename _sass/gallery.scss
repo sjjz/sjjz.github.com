@@ -1,0 +1,36 @@
+
+.gallery-list {
+    float: left;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+        position: relative;
+        width: 90%;
+        padding-bottom: 40px;
+    }
+}
+
+.gallery-list .image-container {
+    background-image:
+        linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+    ;
+    
+    .image {
+        position: relative;
+        z-index: -1;
+    }
+
+    .caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: wheat;
+    }
+}

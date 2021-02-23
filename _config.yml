@@ -1,7 +1,6 @@
 title: Sajjad Zamani
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
 description: >- # this means to ignore newlines until "baseurl:"
 author:
   name: Sajjad Zamani
@@ -11,9 +10,10 @@ show_excerpts: false
 minima:
   social_links:
     github: sjjz
+    instagram: oneguyonelenz
 
 header_pages:
-  - gallery.html
+  # - gallery.html
   - about.md
 
 defaults:
@@ -31,4 +31,4 @@ remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-
+  - jemoji
